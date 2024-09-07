@@ -1,0 +1,81 @@
+<html>
+    <head>
+        <title> Attic </title>
+        <meta charset="UTF-8">
+        <style>
+            body{
+                background-color:black;
+            }
+            #skies{
+                position:fixed;
+                top: 0px;
+                right: 10%;
+                width: 80%;
+                opacity: 1;
+                /* border-radius: 15px 50px 30px 5px; */
+                z-index: -1;
+                
+            }
+            #canvas{
+                position:fixed;
+                top: 50%;
+                right: 60%;
+                width: 300px;
+                opacity: 1;
+                /* border-radius: 15px 50px 30px 5px; */
+                z-index: 0;
+            }
+            #canvas:hover{
+                top: 45%;
+                right: 58%;
+                width: 350px;
+            }
+
+            
+            #school{
+                position:fixed;
+                top: 20%;
+                right: 30%;
+                width: 300px;
+                opacity: 1;
+                /* border-radius: 15px 50px 30px 5px; */
+                z-index: 0;
+            }
+            #cloud{
+                position:fixed;
+                top: 20%;
+                right: 29%;
+                width: 350px;
+                opacity: 1;
+                /* border-radius: 15px 50px 30px 5px; */
+                z-index: 1;
+                transition: all 0.3s ease-in;
+            }
+            #cloud:hover{
+                right: 38%
+            }
+            #back{
+                position: fixed;
+                color:rgb(255, 255, 255);
+                z-index:2;
+                right: 90%;
+                top: 90%;
+                text-decoration: none;
+                font-size: 50px;
+                font-family:Georgia, 'Times New Roman', Times, serif;
+                opacity: 0.7;
+            }
+            #back:hover{
+                color:red;
+            }
+
+        </style>
+    </head>
+    <body>
+        <div><a id="back" href = "attic.html">back</a></div>
+        <img id="skies" src="clouds.jpg"> 
+        <a href = "paintings.html"><img id = "canvas" src="canvas.png"></a> 
+        <a href = "school.html"><img id = "cloud" src="1cloud.png"></a> 
+        <a href = "school.html"><img id = "school" src="school.png"></a> 
+    </body>
+</html>
