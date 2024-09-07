@@ -1,0 +1,58 @@
+<html>
+    <head>
+        <style>
+            body{
+                background-color: black;
+            }
+            .gallery{
+                display:grid;
+                grid-template-columns: repeat(1,1fr);
+                gap: 30px;
+                padding: 20px;
+                z-index: 1; 
+            }
+            .gallery img{
+                width:60%;
+                height:auto;
+                border-radius: 0%;
+                transition: border-radius 1s ease-in;
+            }
+            .gallery img:hover{
+                border-radius: 50%;
+            }
+            #back{
+                position: fixed;
+                color:rgb(255, 255, 255);
+                z-index:2;
+                right: 90%;
+                top: 90%;
+                text-decoration: none;
+                font-size: 50px;
+                font-family:Georgia, 'Times New Roman', Times, serif;
+                opacity: 0.7;
+            }
+            #back:hover{
+                color:red;
+            }
+        </style>
+    </head>
+    <body>
+        <div class = "gallery">
+            <img src = "pears.jpg" alt="image 1">
+            <img src = "mountains.jpg" alt="image 2">
+            <img src = "SunsetLake.jpg" alt="image 3">
+            <img src = "flowers.jpg" alt="image 1">
+            <img src = "Haystack.jpg" alt="image 1">
+            <img src = "cypresses.jpg" alt="image 1">
+            <img src = "jjk.jpg" alt="image 1">
+            <img src = "shrine.jpg" alt="image 1">
+            <img src = "CSM.jpg" alt="image 1">
+            <img src = "hand.jpg" alt="image 1">
+            <img src = "butterfly.jpg" alt="image 1">
+            <img src = "nose.jpg" alt="image 1">
+            <img src = "OnePiece.jpg" alt="image 1">
+            <img src = "shrine.jpg" alt="image 1">
+        </div>
+        <div><a id="back" href = "attic.html">back</a></div>
+    </body>
+</html>
