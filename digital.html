@@ -1,0 +1,59 @@
+<html>
+    <head>
+        <style>
+            body{
+                background-color: black;
+            }
+            .gallery{
+                display:grid;
+                grid-template-columns: repeat(3,1fr);
+                gap: 30px;
+                padding: 20px;
+                z-index: 1; 
+            }
+            .gallery img{
+                width:80%;
+                height:auto;
+                border-radius: 0%;
+                transition: border-radius 1s ease-in;
+            }
+            .gallery img:hover{
+                border-radius: 50%;
+            }
+            #back{
+                position: fixed;
+                color:rgb(255, 255, 255);
+                z-index:2;
+                right: 90%;
+                top: 90%;
+                text-decoration: none;
+                font-size: 50px;
+                font-family:Georgia, 'Times New Roman', Times, serif;
+                opacity: 0.7;
+            }
+            #back:hover{
+                color:red;
+            }
+            #vid{
+                position: relative;
+                z-index: 2;
+                width: 40%;
+                height: auto;
+                top:5%;
+                left:5%;
+                transition: border-radius 1s ease-in;
+            }
+            #vid:hover{
+                border-radius:50%;
+            }
+        </style>
+    </head>
+    <body>
+        <video id="vid" controls>
+            <source src="game.mp4" type="video/mp4">
+        </video>
+        <div class = "gallery">
+        </div>
+        <div><a id="back" href = "ball.html">back</a></div>
+    </body>
+</html>

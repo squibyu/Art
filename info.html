@@ -1,0 +1,79 @@
+<html>
+    <head>
+        <title> Attic </title>
+        <meta charset="UTF-8">
+        <style>
+            body{
+                background-color:black;
+            }
+            #instagram{
+                position:fixed;
+                top: 20%;
+                right: 55%;
+                width: 30%;
+                opacity: 1;
+                /* border-radius: 15px 50px 30px 5px; */
+                z-index: 1;
+                transition: opacity 0.5s ease-in;
+            }
+            #instagram:hover{
+                opacity: 0;
+            }
+            #email{
+                position:fixed;
+                top: 27%;
+                right: 19%;
+                width: 23%;
+                opacity: 1;
+                /* border-radius: 15px 50px 30px 5px; */
+                z-index: 1;
+                transition: opacity 0.5s ease-in;
+            }
+            #email:hover{
+                opacity: 0;
+            }
+            #insta{
+                position: fixed;
+                color:rgb(255, 255, 255);
+                z-index:0;
+                right: 62%;
+                top: 50%;
+                text-decoration: none;
+                font-size: 20px;
+                font-family:Georgia, 'Times New Roman', Times, serif;
+            }
+            #mail{
+                position: fixed;
+                color:rgb(255, 255, 255);
+                z-index:0;
+                right: 22%;
+                top: 50%;
+                text-decoration: none;
+                font-size: 20px;
+                font-family:Georgia, 'Times New Roman', Times, serif;
+            }
+           #back{
+                position: fixed;
+                color:rgb(255, 255, 255);
+                z-index:2;
+                right: 90%;
+                top: 90%;
+                text-decoration: none;
+                font-size: 50px;
+                font-family:Georgia, 'Times New Roman', Times, serif;
+                opacity: 0.7;
+            }
+            #back:hover{
+                color:red;
+            }
+
+        </style>
+    </head>
+    <body>
+        <div><a id="back" href = "attic.html">back</a></div>
+        <div id = "insta">Instagram @squib.yu</div>
+        <div id = "mail">jinxuanyu26@gmail.com</div>
+        <img id="instagram" src="instagram.png"> 
+        <img id="email" src="email.png"> 
+    </body>
+</html>
